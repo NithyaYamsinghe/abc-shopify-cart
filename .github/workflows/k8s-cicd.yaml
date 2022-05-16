@@ -7,7 +7,7 @@ on:
 
 env:
   DOCKER_IMAGE_NAME: abc-shopify-cart
-  POD_DEPLOYMENT_NAME: ctseapp-deployment
+  POD_DEPLOYMENT_NAME: cart-ctseapp-deployment
 
 jobs:
   deploy:
