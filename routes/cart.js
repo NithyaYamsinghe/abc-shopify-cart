@@ -36,8 +36,8 @@ router.put("/:id", verifyTokenAndAuthorization, async (req, res) => {
 //DELETE
 router.delete("/:id", verifyTokenAndAuthorization, async (req, res) => {
   try {
-    await deleteCart(req.params.id);
-    res.status(200);
+    const response = await deleteCart(req.params.id);
+    res.status(2000).json(response);
   } catch (err) {
     res.status(500).json(err.message);
   }
